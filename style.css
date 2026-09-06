@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, Roboto, Arial, sans-serif;
+  background: #f2f2f0;
+  color: #1c1c1a;
+  padding-bottom: 24px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0dc;
+}
+
+.app-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#refresh-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.league-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  overflow-x: auto;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0dc;
+}
+
+.tab {
+  flex-shrink: 0;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #d8d8d4;
+  background: #ffffff;
+  color: #555;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab.active {
+  background: #185fa5;
+  border-color: #185fa5;
+  color: #ffffff;
+}
+
+.matches-list {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loading {
+  text-align: center;
+  color: #888;
+  padding: 40px 0;
+}
+
+.match-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0dc;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-teams {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.team-name {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.team-score {
+  font-size: 15px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: right;
+}
+
+.match-status {
+  font-size: 11px;
+  color: #185fa5;
+  min-width: 64px;
+  text-align: right;
+  margin-left: 10px;
+}
+
+.match-status.finished {
+  color: #888;
+}
